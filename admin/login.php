@@ -160,7 +160,7 @@ a {
     </style>
 </head>
 <body>
-  <form method="post" action=""><div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+  <form method="post" action="process-login.php"><div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
     <div class="card card0 border-0">
         <div class="row d-flex">
             <div class="col-lg-6">
@@ -198,23 +198,7 @@ a {
       ?>
   </div>
 </form>  
-  <?php
-     if(isset($_POST['sbmLogin'])){
-        $email = $_POST['email'];
-        $pass  = $_POST['pass_word'];
-
-        //bước 2: Thực hiện truy vấn
-        $sql = "SELECT * FROM tbl_admin WHERE email='$email' AND pass_word='$pass'";
-        $result = mysqli_query($conn, $sql);
-        $count = mysqli_num_rows($result);
-        if($count == 1){
-            header('location:'.SITEURL.'/admin/');
-        }
-        else{
-            header('location:'.SITEURL.'/admin/login.php');
-        }
-     }
-?>
+  
         <div class="bg-blue py-4">
             <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2019. All rights reserved.</small>
             </div>
