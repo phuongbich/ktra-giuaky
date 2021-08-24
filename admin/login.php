@@ -182,7 +182,7 @@ a {
                         </label> <input class="mb-4" type="email" name="email" placeholder="Enter email" > </div>
                     <div class="row px-3"> <label class="mb-1">
                             <h6 class="mb-0 text-sm">Password</h6>
-                        </label> <input type="password" name="password" placeholder="Enter password"> </div>
+                        </label> <input type="password" name="pass_word" placeholder="Enter password"> </div>
                     <div class="row px-3 mb-4">
                         <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
                     </div>
@@ -208,7 +208,6 @@ a {
         $result = mysqli_query($conn, $sql);
         $count = mysqli_num_rows($result);
         if($count == 1){
-            $_SESSION['login'] = $email;         //tạo phiên
             header('location:'.SITEURL.'/admin/');
         }
         else{
