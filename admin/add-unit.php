@@ -54,7 +54,7 @@ if(!empty($_POST)){
 			        <div class="myform form ">
                         <div class="logo mb-3">
                            <div class="col-md-12 text-center">
-                              <h1 >Add Admin</h1>
+                              <h1 >Add Unit</h1>
                            </div>
                         </div>
                         <form action="#" name="registration">
@@ -75,7 +75,7 @@ if(!empty($_POST)){
                               <input type="text" name="telephone" id="telephone"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Telephone">
                            </div>
                            <div class="col-md-12 text-center mb-5 mt-3">
-                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Add Cadres</button>
+                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Add Unit</button>
                            </div>
                         </form>
                     </div>
