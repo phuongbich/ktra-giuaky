@@ -55,7 +55,7 @@ if(!empty($_POST)){
 			        <div class="myform form ">
                         <div class="logo mb-3">
                            <div class="col-md-12 text-center">
-                              <h1 >Add Admin</h1>
+                              <h1 >Add Cadres</h1>
                            </div>
                         </div>
                         <form action="#" name="registration">
